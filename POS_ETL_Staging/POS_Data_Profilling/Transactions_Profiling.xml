@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<DataProfile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
+  <ProfileVersion>1.0</ProfileVersion>
+  <DataSources>
+    <DtsDataSource ID="{04905F3A-229C-46E0-9C54-717682D1527E}" Name="SANDALU\SQLEXPRESS01.POS_staging">
+      <DtsConnectionManagerID>SANDALU\SQLEXPRESS01.POS_staging</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{4FD59C56-15CD-4BAE-9E65-B4221A11FB55}" Name="Transactions_Profiling.xml">
+      <DtsConnectionManagerID>Transactions_Profiling.xml</DtsConnectionManagerID>
+    </DtsDataSource>
+  </DataSources>
+  <DataProfileInput>
+    <ProfileMode>Exact</ProfileMode>
+    <Timeout>0</Timeout>
+    <Requests>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq">
+        <DataSourceID>{04905F3A-229C-46E0-9C54-717682D1527E}</DataSourceID>
+        <Table Schema="dbo" Table="Transactions_Staging" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq">
+        <DataSourceID>{04905F3A-229C-46E0-9C54-717682D1527E}</DataSourceID>
+        <Table Schema="dbo" Table="Transactions_Staging" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq">
+        <DataSourceID>{04905F3A-229C-46E0-9C54-717682D1527E}</DataSourceID>
+        <Table Schema="dbo" Table="Transactions_Staging" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq">
+        <DataSourceID>{04905F3A-229C-46E0-9C54-717682D1527E}</DataSourceID>
+        <Table Schema="dbo" Table="Transactions_Staging" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq">
+        <DataSourceID>{04905F3A-229C-46E0-9C54-717682D1527E}</DataSourceID>
+        <Table Schema="dbo" Table="Transactions_Staging" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+    </Requests>
+  </DataProfileInput>
+  <DataProfileOutput>
+    <Profiles />
+  </DataProfileOutput>
+</DataProfile>
