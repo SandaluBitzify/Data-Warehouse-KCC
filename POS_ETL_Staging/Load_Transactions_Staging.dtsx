@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Load_Transactions_Staging"
   DTS:PackageType="5"
-  DTS:VersionBuild="37"
-  DTS:VersionGUID="{A0F8E237-E002-4F6D-A1C7-B57A52F3CFC0}">
+  DTS:VersionBuild="41"
+  DTS:VersionGUID="{8488818E-CD9D-4993-9112-0E66B84D8090}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -5246,27 +5246,43 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="215.2,41.6"
-          Id="Package\Load Transactions to Staging"
-          TopLeft="360.714286482152,16.8235293970182" />
+          Size="280,41.6"
+          Id="Package\Load CollectTransactionHeaders to Staging"
+          TopLeft="332.857143565708,175.882352787009" />
+        <NodeLayout
+          Size="240.8,41.6"
+          Id="Package\Load CustomerContacts to Staging"
+          TopLeft="355.000000755702,252.352940955273" />
+        <NodeLayout
+          Size="228,41.6"
+          Id="Package\Load StallMenuItems to Staging"
+          TopLeft="365.000000776989,427.4705878606" />
+        <NodeLayout
+          Size="180,41.6"
+          Id="Package\Load Stalls to Staging"
+          TopLeft="386.428572251176,329.588235005221" />
         <NodeLayout
           Size="236.8,41.6"
           Id="Package\Load TransactionItems to Staging"
           TopLeft="356.428572187315,101.705882263792" />
+        <NodeLayout
+          Size="215.2,41.6"
+          Id="Package\Load Transactions to Staging"
+          TopLeft="360.714286482152,16.0588235153355" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="471.571429334733,58.4235293970182">
+          TopLeft="471.571429334733,57.6588235153355">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,43.2823528667738"
+              EndConnector="0,44.0470587484565"
               Start="0,0"
-              End="0,35.7823528667738">
+              End="0,36.5470587484565">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,35.7823528667738" />
+                    End="0,36.5470587484565" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5275,10 +5291,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="280,41.6"
-          Id="Package\Load CollectTransactionHeaders to Staging"
-          TopLeft="332.857143565708,175.882352787009" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="473.842857876511,143.305882263792">
@@ -5301,10 +5313,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="240.8,41.6"
-          Id="Package\Load CustomerContacts to Staging"
-          TopLeft="355.000000755702,252.352940955273" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="474.128572160705,217.482352787009">
@@ -5327,10 +5335,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="180,41.6"
-          Id="Package\Load Stalls to Staging"
-          TopLeft="386.428572251176,329.588235005221" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
           TopLeft="475.914286503439,293.952940955273">
@@ -5353,10 +5357,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="228,41.6"
-          Id="Package\Load StallMenuItems to Staging"
-          TopLeft="365.000000776989,427.4705878606" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
           TopLeft="477.714286514083,371.188235005221">
@@ -5382,70 +5382,6 @@
       </GraphLayout>
     </LayoutInfo>
   </Package>
-  <TaskHost
-    design-time-name="Package\Load Transactions to Staging">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="149.6,41.6"
-          Id="Package\Load Transactions to Staging\OLE DB Source"
-          TopLeft="339.285715007965,80.2941175766779" />
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Load Transactions to Staging\OLE DB Destination"
-          TopLeft="323.571429260227,197.294117474123" />
-        <EdgeLayout
-          Id="Package\Load Transactions to Staging.Paths[OLE DB Source Output]"
-          TopLeft="411.428572134096,121.894117576678">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,75.3999998974451"
-              Start="0,0"
-              End="0,67.8999998974451">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,67.8999998974451" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load Transactions to Staging\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load Transactions to Staging\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <DtsEventHandler
     design-time-name="Package.EventHandlers[OnPreExecute]">
     <LayoutInfo>
@@ -5459,10 +5395,322 @@
     </LayoutInfo>
   </DtsEventHandler>
   <TaskHost
+    design-time-name="Package\Load CollectTransactionHeaders to Staging">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\Load CollectTransactionHeaders to Staging\OLE DB Source"
+          TopLeft="502.999992504716,128.99999807775" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Load CollectTransactionHeaders to Staging\OLE DB Destination"
+          TopLeft="495.999992609024,270.999995961785" />
+        <EdgeLayout
+          Id="Package\Load CollectTransactionHeaders to Staging.Paths[OLE DB Source Output]"
+          TopLeft="579.49999255687,170.59999807775">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,100.399997884035"
+              Start="0,0"
+              End="0,92.8999978840351">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,92.8999978840351" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <DtsEventHandler
+    design-time-name="Package\Load CollectTransactionHeaders to Staging.EventHandlers[OnPreExecute]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="299.2,41.6"
+          Id="Package\Load CollectTransactionHeaders to Staging.EventHandlers[OnPreExecute]\TRUNCATE CollectTransactionHeaders_Staging"
+          TopLeft="560.999991640448,200.999997004867" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load CollectTransactionHeaders to Staging\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load CollectTransactionHeaders to Staging\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load CustomerContacts to Staging">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Load CustomerContacts to Staging\OLE DB Destination"
+          TopLeft="622.999990716577,262.999996080995" />
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\Load CustomerContacts to Staging\OLE DB Source"
+          TopLeft="635.999990522862,117.999998241663" />
+        <EdgeLayout
+          Id="Package\Load CustomerContacts to Staging.Paths[OLE DB Source Output]"
+          TopLeft="709.499990619719,159.599998241663">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,103.399997839332"
+              Start="0,0"
+              End="0,95.8999978393316">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,95.8999978393316" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <DtsEventHandler
+    design-time-name="Package\Load CustomerContacts to Staging.EventHandlers[OnPreExecute]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="249.6,41.6"
+          Id="Package\Load CustomerContacts to Staging.EventHandlers[OnPreExecute]\Truncate CustomerContacts_Staging"
+          TopLeft="628.99999062717,229.999996572733" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load CustomerContacts to Staging\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load CustomerContacts to Staging\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load StallMenuItems to Staging">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Load StallMenuItems to Staging\OLE DB Destination"
+          TopLeft="681.999989837408,241.999996393919" />
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\Load StallMenuItems to Staging\OLE DB Source"
+          TopLeft="686.999989762903,101.999998480082" />
+        <EdgeLayout
+          Id="Package\Load StallMenuItems to Staging.Paths[OLE DB Source Output]"
+          TopLeft="764.499989800155,143.599998480082">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,98.3999979138374"
+              Start="0,0"
+              End="0,90.8999979138374">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,90.8999979138374" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <DtsEventHandler
+    design-time-name="Package\Load StallMenuItems to Staging.EventHandlers[OnPreExecute]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="236.8,41.6"
+          Id="Package\Load StallMenuItems to Staging.EventHandlers[OnPreExecute]\Truncate StallMenuItems_Staging"
+          TopLeft="570.999991491437,190.999997153878" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load StallMenuItems to Staging\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load StallMenuItems to Staging\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load Stalls to Staging">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Load Stalls to Staging\OLE DB Destination"
+          TopLeft="566.999991551042,303.999995470047" />
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\Load Stalls to Staging\OLE DB Source"
+          TopLeft="579.999991357326,135.999997973442" />
+        <EdgeLayout
+          Id="Package\Load Stalls to Staging.Paths[OLE DB Source Output]"
+          TopLeft="653.499991454184,177.599997973442">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,126.399997496605"
+              Start="0,0"
+              End="0,118.899997496605">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,118.899997496605" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <DtsEventHandler
+    design-time-name="Package\Load Stalls to Staging.EventHandlers[OnPreExecute]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="199.2,41.6"
+          Id="Package\Load Stalls to Staging.EventHandlers[OnPreExecute]\TRUNCATE Stalls_Staging"
+          TopLeft="577.999991387129,155.999997675419" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Stalls to Staging\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Stalls to Staging\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\Load TransactionItems to Staging">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="225.6,41.6"
           Id="Package\Load TransactionItems to Staging\OLE DB Source"
@@ -5502,25 +5750,26 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load TransactionItems to Staging\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
+  <DtsEventHandler
+    design-time-name="Package\Load TransactionItems to Staging.EventHandlers[OnPreExecute]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="246.4,41.6"
+          Id="Package\Load TransactionItems to Staging.EventHandlers[OnPreExecute]\Truncate TransactionItems_Staging"
+          TopLeft="413.999993830919,124.999998137355" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
   <PipelineComponentMetadata
     design-time-name="Package\Load TransactionItems to Staging\OLE DB Destination">
     <Properties>
@@ -5534,45 +5783,58 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <DtsEventHandler
-    design-time-name="Package\Load TransactionItems to Staging.EventHandlers[OnPreExecute]">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="246.4,41.6"
-          Id="Package\Load TransactionItems to Staging.EventHandlers[OnPreExecute]\Truncate TransactionItems_Staging"
-          TopLeft="413.999993830919,124.999998137355" />
-      </GraphLayout>
-    </LayoutInfo>
-  </DtsEventHandler>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load TransactionItems to Staging\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Load CollectTransactionHeaders to Staging">
+    design-time-name="Package\Load Transactions to Staging">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="149.6,41.6"
-          Id="Package\Load CollectTransactionHeaders to Staging\OLE DB Source"
-          TopLeft="502.999992504716,128.99999807775" />
+          Id="Package\Load Transactions to Staging\OLE DB Source"
+          TopLeft="341.428572155384,80.2941175766779" />
         <NodeLayout
           Size="170.4,41.6"
-          Id="Package\Load CollectTransactionHeaders to Staging\OLE DB Destination"
-          TopLeft="495.999992609024,270.999995961785" />
+          Id="Package\Load Transactions to Staging\OLE DB Destination"
+          TopLeft="322.857143544421,197.294117474123" />
         <EdgeLayout
-          Id="Package\Load CollectTransactionHeaders to Staging.Paths[OLE DB Source Output]"
-          TopLeft="579.49999255687,170.59999807775">
+          Id="Package\Load Transactions to Staging.Paths[OLE DB Source Output]"
+          TopLeft="416.228572155384,121.894117576678">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,100.399997884035"
+              EndConnector="-8.17142861096295,75.3999998974451"
               Start="0,0"
-              End="0,92.8999978840351">
+              End="-8.17142861096295,67.8999998974451">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,92.8999978840351" />
+                    End="0,33.6999999487225" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.6999999487225"
+                    Point2="0,37.6999999487225"
+                    Point3="-4,37.6999999487225" />
+                  <mssgle:LineSegment
+                    End="-4.17142861096295,37.6999999487225" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.17142861096295,37.6999999487225"
+                    Point2="-8.17142861096295,37.6999999487225"
+                    Point3="-8.17142861096295,41.6999999487225" />
+                  <mssgle:LineSegment
+                    End="-8.17142861096295,67.8999998974451" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5585,7 +5847,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Load CollectTransactionHeaders to Staging\OLE DB Source">
+    design-time-name="Package\Load Transactions to Staging\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -5598,7 +5860,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Load CollectTransactionHeaders to Staging\OLE DB Destination">
+    design-time-name="Package\Load Transactions to Staging\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -5610,245 +5872,5 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <DtsEventHandler
-    design-time-name="Package\Load CollectTransactionHeaders to Staging.EventHandlers[OnPreExecute]">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="299.2,41.6"
-          Id="Package\Load CollectTransactionHeaders to Staging.EventHandlers[OnPreExecute]\TRUNCATE CollectTransactionHeaders_Staging"
-          TopLeft="560.999991640448,200.999997004867" />
-      </GraphLayout>
-    </LayoutInfo>
-  </DtsEventHandler>
-  <TaskHost
-    design-time-name="Package\Load CustomerContacts to Staging">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="149.6,41.6"
-          Id="Package\Load CustomerContacts to Staging\OLE DB Source"
-          TopLeft="635.999990522862,117.999998241663" />
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Load CustomerContacts to Staging\OLE DB Destination"
-          TopLeft="622.999990716577,262.999996080995" />
-        <EdgeLayout
-          Id="Package\Load CustomerContacts to Staging.Paths[OLE DB Source Output]"
-          TopLeft="709.499990619719,159.599998241663">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,103.399997839332"
-              Start="0,0"
-              End="0,95.8999978393316">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,95.8999978393316" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load CustomerContacts to Staging\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load CustomerContacts to Staging\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <DtsEventHandler
-    design-time-name="Package\Load CustomerContacts to Staging.EventHandlers[OnPreExecute]">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="249.6,41.6"
-          Id="Package\Load CustomerContacts to Staging.EventHandlers[OnPreExecute]\Truncate CustomerContacts_Staging"
-          TopLeft="628.99999062717,229.999996572733" />
-      </GraphLayout>
-    </LayoutInfo>
-  </DtsEventHandler>
-  <TaskHost
-    design-time-name="Package\Load Stalls to Staging">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="149.6,41.6"
-          Id="Package\Load Stalls to Staging\OLE DB Source"
-          TopLeft="579.999991357326,135.999997973442" />
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Load Stalls to Staging\OLE DB Destination"
-          TopLeft="566.999991551042,303.999995470047" />
-        <EdgeLayout
-          Id="Package\Load Stalls to Staging.Paths[OLE DB Source Output]"
-          TopLeft="653.499991454184,177.599997973442">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,126.399997496605"
-              Start="0,0"
-              End="0,118.899997496605">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,118.899997496605" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load Stalls to Staging\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load Stalls to Staging\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <DtsEventHandler
-    design-time-name="Package\Load Stalls to Staging.EventHandlers[OnPreExecute]">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="199.2,41.6"
-          Id="Package\Load Stalls to Staging.EventHandlers[OnPreExecute]\TRUNCATE Stalls_Staging"
-          TopLeft="577.999991387129,155.999997675419" />
-      </GraphLayout>
-    </LayoutInfo>
-  </DtsEventHandler>
-  <TaskHost
-    design-time-name="Package\Load StallMenuItems to Staging">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="149.6,41.6"
-          Id="Package\Load StallMenuItems to Staging\OLE DB Source"
-          TopLeft="686.999989762903,101.999998480082" />
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Load StallMenuItems to Staging\OLE DB Destination"
-          TopLeft="681.999989837408,241.999996393919" />
-        <EdgeLayout
-          Id="Package\Load StallMenuItems to Staging.Paths[OLE DB Source Output]"
-          TopLeft="764.499989800155,143.599998480082">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,98.3999979138374"
-              Start="0,0"
-              End="0,90.8999979138374">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,90.8999979138374" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load StallMenuItems to Staging\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load StallMenuItems to Staging\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <DtsEventHandler
-    design-time-name="Package\Load StallMenuItems to Staging.EventHandlers[OnPreExecute]">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="236.8,41.6"
-          Id="Package\Load StallMenuItems to Staging.EventHandlers[OnPreExecute]\Truncate StallMenuItems_Staging"
-          TopLeft="570.999991491437,190.999997153878" />
-      </GraphLayout>
-    </LayoutInfo>
-  </DtsEventHandler>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>

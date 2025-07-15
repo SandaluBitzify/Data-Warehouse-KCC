@@ -2,18 +2,18 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>POS_ETL_Staging</Name>
-    <LastWriteTime>2025-07-12T15:33:17.767946Z</LastWriteTime>
+    <LastWriteTime>2025-07-15T04:42:13.7866834Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Load_Transactions_Staging.dtsx</Name>
-      <LastWriteTime>2025-07-12T11:56:34.2926896Z</LastWriteTime>
+      <LastWriteTime>2025-07-15T05:53:40.6664337Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>Data_Profiling.dtsx</Name>
-      <LastWriteTime>2025-07-12T15:40:12.2139712Z</LastWriteTime>
+      <Name>Staging_to_DW.dtsx</Name>
+      <LastWriteTime>2025-07-15T04:42:03.6969341Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
